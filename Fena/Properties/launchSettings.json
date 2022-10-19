@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Fena (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Fena (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
