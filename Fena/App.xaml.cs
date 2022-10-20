@@ -26,6 +26,9 @@ namespace Fena
     /// </summary>
     public partial class App : Application
     {
+        private Window shell;
+        public Window Shell => shell;
+
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -42,11 +45,8 @@ namespace Fena
         /// <param name="args">Details about the launch request and process.</param>
         protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
         {
-            m_window = new MainWindow();
-            m_window.Activate();
+            shell ??= new Shell();
+            shell.Activate();
         }
-
-        private Window m_window;
-        public Window MainWindow => m_window;
     }
 }

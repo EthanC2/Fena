@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Fena.Views.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Fena.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <!--NavigationCacheMode="Enabled | Required"-->
+    
+    <Grid>
+        <!-- [Center] Instructional Text -->
+        <TextBlock TextAlignment="Center" 
+                   VerticalAlignment="Center" 
+                   HorizontalAlignment="Center">
+             Welcome to <Italic>Fena</Italic> - a free, extensible note-taking applciation.
+             To create a new document, click the '<Bold>+</Bold>' in the top-left corner.
+        </TextBlock>
+    </Grid>
+</Page>
